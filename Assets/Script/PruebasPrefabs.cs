@@ -11,6 +11,10 @@ public class PruebasPrefabs : MonoBehaviour
     public GameObject socket;
     public Transform vacaTransform;
 
+    [Header("Cañones")]
+    public GameObject balaPrefab;
+    public Transform balaTransform;
+
 
     // Start is called before the first frame update
     void Start()
@@ -56,5 +60,13 @@ public class PruebasPrefabs : MonoBehaviour
 
     public void Socket() {
        // Instantiate(socket, transformSocket.position, Quaternion.identity);
+    }
+
+    public void Shoot() {
+
+        //socket.SetActive(false);
+        Instantiate(balaPrefab, balaTransform.position, Quaternion.identity);
+        
+
     }
 }
