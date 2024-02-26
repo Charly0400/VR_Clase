@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UIElements;
 using UnityEngine.XR.Content.Interaction;
 
 public class PruebasPrefabs : MonoBehaviour
@@ -66,7 +67,7 @@ public class PruebasPrefabs : MonoBehaviour
 
         //socket.SetActive(false);
         Instantiate(balaPrefab, balaTransform.position, Quaternion.identity);
-        
+        balaPrefab.transform.Translate(Vector3.forward);
 
     }
 }
