@@ -13,7 +13,10 @@ public class PruebasPrefabs : MonoBehaviour
     public Transform vacaTransform;
 
     [Header("Cañones")]
+    [SerializeField]
+    private float fuerza = 10;
     public GameObject balaPrefab;
+    public Rigidbody bala;
     public Transform balaTransform;
 
 
@@ -67,7 +70,8 @@ public class PruebasPrefabs : MonoBehaviour
 
         //socket.SetActive(false);
         Instantiate(balaPrefab, balaTransform.position, Quaternion.identity);
-        balaPrefab.transform.Translate(Vector3.forward);
+        bala.AddForce(transform.forward * fuerza);
+        
 
     }
 }
