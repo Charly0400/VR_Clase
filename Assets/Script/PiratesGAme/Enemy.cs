@@ -22,5 +22,16 @@ public class Enemy : MonoBehaviour
         }
     }
 
-   
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "Player")
+        {
+            Debug.Log("Colisión con Jugador");
+            //Destroy(other.gameObject);
+
+        }
+
+    }
+
+
 }

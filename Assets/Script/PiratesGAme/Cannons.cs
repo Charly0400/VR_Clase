@@ -20,6 +20,7 @@ public class Cannons : MonoBehaviour
     void Start()
     {
         sX = GetComponent<XRSocketInteractor>();
+        bala = balaPrefab.GetComponent<Rigidbody>();
  
     }
 
