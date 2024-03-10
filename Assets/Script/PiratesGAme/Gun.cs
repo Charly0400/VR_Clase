@@ -22,4 +22,6 @@ public class Gun : MonoBehaviour
         GameObject tempBullet = Instantiate(bullet, spawner.position, Quaternion.identity);
         tempBullet.GetComponent<Rigidbody>().velocity = spawner.forward * bulletSpeed;
     }
+
+    
 }
