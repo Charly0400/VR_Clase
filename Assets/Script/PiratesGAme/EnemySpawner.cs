@@ -2,7 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemySpawner : MonoBehaviour
+public class EnemySpawner : MonoBehaviour //Hecho con ayuda del CHATGPT
+
 {
        public GameObject enemyPrefab; // Prefab del enemigo
     public Transform playerTransform; // Transform del jugador
@@ -42,7 +43,6 @@ public class EnemySpawner : MonoBehaviour
         }
     }
 
-    // Método para disminuir el contador de enemigos cuando un enemigo es destruido
     public void DecreaseEnemyCount()
     {
         currentEnemyCount--;
@@ -50,7 +50,6 @@ public class EnemySpawner : MonoBehaviour
 
     private void OnDrawGizmosSelected()
     {
-        // Dibujar un wireframe del área de aparición de los enemigos
         Gizmos.color = Color.yellow;
         Gizmos.DrawWireCube(transform.position, spawnAreaSize);
     }
