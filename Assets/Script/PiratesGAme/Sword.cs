@@ -4,12 +4,17 @@ using UnityEngine;
 
 public class Sword : MonoBehaviour
 {
-    private void OnCollisionEnter(Collision collision)
+
+
+    private void OnTriggerEnter(Collider other)
     {
-        if (collision.collider.CompareTag("Ghost"))
+        if (other.gameObject.tag == "Ghost")
         {
             Debug.Log("Colisión con Fantasma");
-            Destroy(collision.gameObject);
+            Destroy(other.gameObject);
+
         }
+
+
     }
 }
