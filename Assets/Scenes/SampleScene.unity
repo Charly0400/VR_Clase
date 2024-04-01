@@ -3893,7 +3893,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &416208126
 GameObject:
   m_ObjectHideFlags: 0
@@ -5282,7 +5282,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &495979996
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5620,7 +5620,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &507230918
 GameObject:
   m_ObjectHideFlags: 0
@@ -13925,7 +13925,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1135784776}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.19, y: -0.52, z: -6.85}
+  m_LocalPosition: {x: -6.242, y: -0.074, z: -6.678}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -14069,7 +14069,7 @@ CharacterController:
   m_Enabled: 1
   serializedVersion: 2
   m_Height: 2
-  m_Radius: 0.5
+  m_Radius: 0.1
   m_SlopeLimit: 45
   m_StepOffset: 0.3
   m_SkinWidth: 0.08
@@ -25261,6 +25261,7 @@ GameObject:
   - component: {fileID: 5589643522180989558}
   - component: {fileID: 5589643522180989557}
   - component: {fileID: 5589643522180989559}
+  - component: {fileID: 5589643522180989560}
   m_Layer: 0
   m_Name: Ch15_nonPBR (1)
   m_TagString: Untagged
@@ -26751,7 +26752,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2241764244496225671}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: -0.0015707755, z: 0, w: 0.9999988}
   m_LocalPosition: {x: 0.363, y: 0, z: 0.042}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -41516,7 +41517,7 @@ Animator:
   m_GameObject: {fileID: 1169136359322206900}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 1e3a445cc9217384199e547713c8930f, type: 3}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 1720c98616a0f194dae551fe7645b49b, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
@@ -41647,16 +41648,82 @@ MonoBehaviour:
     trackingRotationOffset: {x: 0, y: 0, z: 0}
   leftHand:
     vrTarget: {fileID: 1998456870}
-    ikTarget: {fileID: 1066117618}
-    trackingPositionOffset: {x: 0, y: 0, z: 0}
-    trackingRotationOffset: {x: 0, y: 0, z: 0}
+    ikTarget: {fileID: 1912344173}
+    trackingPositionOffset: {x: -0.03, y: 0.04, z: -0.06}
+    trackingRotationOffset: {x: 99.4, y: 102.47, z: 111.6}
   rightHand:
     vrTarget: {fileID: 1155121205}
-    ikTarget: {fileID: 1738164516}
-    trackingPositionOffset: {x: 0, y: 0, z: 0}
-    trackingRotationOffset: {x: 0, y: 0, z: 0}
-  headBodyPositionOffset: {x: 0, y: 0, z: 0}
+    ikTarget: {fileID: 931308514}
+    trackingPositionOffset: {x: 0, y: 0.06, z: -0.08}
+    trackingRotationOffset: {x: 97.89, y: 1.22, z: -20.11}
+  headBodyPositionOffset: {x: 0, y: -0.4, z: 0}
   headBodyYawOffset: 0
+--- !u!114 &5589643522180989560
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1169136359322206900}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ced439ec2745be64dbec705186b971a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animationInputs:
+  - animationPropertyName: Right Pinch
+    action:
+      m_UseReference: 1
+      m_Action:
+        m_Name: Action
+        m_Type: 0
+        m_ExpectedControlType: 
+        m_Id: 5e2790c2-217e-407e-8cf0-08990e62c815
+        m_Processors: 
+        m_Interactions: 
+        m_SingletonActionBindings: []
+        m_Flags: 0
+      m_Reference: {fileID: 7904272356298805229, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+  - animationPropertyName: Right Grab
+    action:
+      m_UseReference: 1
+      m_Action:
+        m_Name: Action
+        m_Type: 0
+        m_ExpectedControlType: 
+        m_Id: 11922041-745d-45b7-9bc4-3825b03e1752
+        m_Processors: 
+        m_Interactions: 
+        m_SingletonActionBindings: []
+        m_Flags: 0
+      m_Reference: {fileID: -1758520528963094988, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+  - animationPropertyName: Left Pinch
+    action:
+      m_UseReference: 1
+      m_Action:
+        m_Name: Action
+        m_Type: 0
+        m_ExpectedControlType: 
+        m_Id: ad3cb071-3c0c-442a-9599-0814bd582ee6
+        m_Processors: 
+        m_Interactions: 
+        m_SingletonActionBindings: []
+        m_Flags: 0
+      m_Reference: {fileID: -4289430672226363583, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+  - animationPropertyName: Lefy Grab
+    action:
+      m_UseReference: 1
+      m_Action:
+        m_Name: Action
+        m_Type: 0
+        m_ExpectedControlType: 
+        m_Id: afa2049f-7121-42dc-a9e8-f3fb5d3ef691
+        m_Processors: 
+        m_Interactions: 
+        m_SingletonActionBindings: []
+        m_Flags: 0
+      m_Reference: {fileID: 6558622148059887818, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+  animator: {fileID: 5589643522180989556}
 --- !u!65 &5683494465234227298
 BoxCollider:
   m_ObjectHideFlags: 0
