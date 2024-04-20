@@ -2099,6 +2099,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4978101017300995601, guid: c36a9bed8c9338247a9d02e9b08693a4, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4978101017910672499, guid: c36a9bed8c9338247a9d02e9b08693a4, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -2211,6 +2215,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4978101017987268250, guid: c36a9bed8c9338247a9d02e9b08693a4, type: 3}
+      propertyPath: m_PresetInfoIsWorld
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4978101017987268260, guid: c36a9bed8c9338247a9d02e9b08693a4, type: 3}
       propertyPath: m_Name
       value: Canvas
@@ -2238,6 +2246,18 @@ PrefabInstance:
     - target: {fileID: 4978101018049003956, guid: c36a9bed8c9338247a9d02e9b08693a4, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4978101018390347711, guid: c36a9bed8c9338247a9d02e9b08693a4, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4978101018390347711, guid: c36a9bed8c9338247a9d02e9b08693a4, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 0c3bb35cdbc709141a438de2b4ad3911, type: 3}
+    - target: {fileID: 4978101018390347711, guid: c36a9bed8c9338247a9d02e9b08693a4, type: 3}
+      propertyPath: m_Color.a
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c36a9bed8c9338247a9d02e9b08693a4, type: 3}
